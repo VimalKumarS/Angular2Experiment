@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="margin-20">
+        <h4>Add customer</h4>
+      </div>
+      <form novalidate #f="ngForm" (ngSubmit)="save(f)">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text" class="form-control" required name="name" ngModel #name="ngModel">
+          <small *ngIf="name.errors?.required && name.touched" class="text-danger">
+              Name is required (minimum 5 characters).
+            </small>
+
+
+        </div>
+       
+<div  ngModelGroup="addresses" #address="ngModelGroup">
+     <address-dynamic [address]="customer.addresses[0]" (formUpdate)="formUpdate($event)"> </address-dynamic>
+     <address-dynamic [address]="customer.addresses[1]" (formUpdate)="formUpdate($event)"> </address-dynamic> 
+  </div>
+  
+
+        <div class="margin-20">
+          <button type="button" class="btn btn-primary pull-right" (click)="save(f)" [disabled]="f.invalid">Submit</button>
+        </div>
+        <div class="clearfix"></div>
+
+        <div class="margin-20">
+          <div>myForm details:-</div>
+          <pre>Is myForm valid?: <br>{{f.valid | json}}</pre>
+          <pre>form value: <br>{{f.value | json}}</pre>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

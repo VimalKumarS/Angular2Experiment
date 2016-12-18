@@ -1,0 +1,59 @@
+  @import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+        .po-part-NoteList {
+            width: 520px;
+            border: 1px solid #bbb;
+            margin: 50px;
+            height: 80%;
+        }
+        
+        .titleBox {
+            background-color: #fdfdfd;
+            padding: 10px;
+        }
+        
+        .titleBox label {
+            color: #444;
+            margin: 0;
+            display: inline-block;
+        }
+        
+       
+        
+        .taskDescription {
+            margin-top: 10px 0;
+        }
+        
+        .po-part-note {
+            padding: 0;
+            list-style: none;
+            height: 300px;
+            overflow: auto;
+        }
+        
+        .po-part-note li {
+            margin: 0;
+            margin-top: 10px;
+            border-bottom: 1px dotted #bbb;
+        }
+        
+        .po-part-note li > div {
+            display: table-cell;
+        }
+       
+        
+        .po-part-noteText p {
+            margin: 0;
+        }
+        
+        .sub-text {
+            color: #aaa;
+            font-family: verdana;
+            font-size: 11px;
+        }
+        
+        .po-part-NotesListBox {
+            border-top: 1px dotted #bbb;
+           
+            padding: 10px;
+        }
+  

@@ -1,0 +1,12 @@
+<form [ngFormModel]="parentForm" #parent="ngForm" (ngSubmit)="onSubmit(parent.value)">
+  <h2>Property Details</h2>
+    <label>Name:</label><input type="text" name="name" ngControl="name" />
+    <br/>
+    <label>Contact Person:</label><input type="text" name="contactname" ngControl="contactname" />
+    <br />
+    <address #address [paramForm]='parentForm'></address>
+
+    <br />
+
+    <input type="submit" [disabled]="!parent.form.valid || !address.childForm.valid" value="submit" class="btn btn-success" />
+</form>
