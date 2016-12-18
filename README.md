@@ -1,6 +1,6 @@
 # Angular2Experiment
-> Learn Changedetection strategy
-> Template and model dirven form
-> Todo app
-> Shared component
-> Creating custom directive
+> Learn Changedetection strategy <br/>
+> Template and model dirven form <br/>
+> Todo app <br/>
+> Shared component <br/>
+> Creating custom directive <br/>
